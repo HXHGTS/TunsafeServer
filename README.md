@@ -20,13 +20,15 @@ sudo bash preload.sh
 
 这个执行完成会触发重启且不会提示，是正常情况
 
-wget https://github.com/HXHGTS/TunsafeServer/raw/master/Tunsafe.c
+yum install -y git
 
-gcc -o Tunsafe Tunsafe.c
+git clone https://github.com/TunSafe/TunSafe.git
 
-sudo chmod +x Tunsafe
+cd TunSafe
 
-sudo ./Tunsafe
+sudo make && make install
+
+sudo tunsafe start -d TunSafe.conf
 
 客户端下载(Tunsafe)：
 
