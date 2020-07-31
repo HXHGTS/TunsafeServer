@@ -4,7 +4,7 @@
 
 尽管Tunsafe服务器可基于WireGuard搭建，但官方似乎加入了新的特性，且与官方版wg不兼容，故单独开一个项目
 
-直接运行(仅支持CentOS7)：
+直接运行(仅支持Ubuntu)：
 
 sudo yum install -y wget gcc
 
@@ -20,7 +20,7 @@ sudo bash preload.sh
 
 这个执行完成会触发重启且不会提示，是正常情况
 
-yum install -y git
+sudo apt-get install git clang-6.0 -y
 
 git clone https://github.com/TunSafe/TunSafe.git
 
