@@ -4,21 +4,7 @@
 
 尽管Tunsafe服务器可基于WireGuard搭建，但官方似乎加入了新的特性，且与官方版wg不兼容，故单独开一个项目
 
-直接运行(仅支持Ubuntu)：
-
-sudo yum install -y wget gcc
-
-echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
-
-echo "52.78.231.108 github.com" >> /etc/hosts
-
-wget https://github.com/HXHGTS/WireGuardServer/raw/master/preload.sh
-
-sudo chmod +x preload.sh
-
-sudo bash preload.sh
-
-这个执行完成会触发重启且不会提示，是正常情况
+直接运行(仅支持Ubuntu18.04)：
 
 sudo apt-get install git clang-6.0 -y
 
