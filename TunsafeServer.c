@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 int run_mode;
+int CreateServer(), RunServer(), StopServer(), ShowInfo();
+
 int main()
 {
     printf("请选择操作:\n1.搭建Tunsafe服务器\n2.启动Tunsafe服务器\n3.显示服务器信息\n4.关闭Tunsafe服务器\n5.退出\n请输入:");
@@ -24,11 +26,9 @@ int main()
     return 0;
 }
 int CreateServer() {
-    system("apt install git -y");
-    system("apt-get install clang-6.0");
+    system("apt-get install git clang-6.0 -y");
     system("git clone https://github.com/TunSafe/TunSafe.git");
-    system("cd TunSafe");
-    system("make && make install");
+    system("cd /root/TunSafe && make && make install");
     printf("Tunsafe服务器搭建完成!\n");
     return 0;
 }
