@@ -6,21 +6,11 @@
 
 直接运行：
 
-apt update -y
+apt-get install wget -y
 
-apt upgrade -y
+wget https://github.com/HXHGTS/TunsafeServer/raw/master/preload.sh
 
-sudo apt install gcc g++ wget -y
-
-echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
-
-echo "52.78.231.108 github.com" >> /etc/hosts
-
-echo "net.core.default_qdisc = fq" >> /etc/sysctl.conf
-
-echo "net.ipv4.tcp_congestion_control = bbr" >> /etc/sysctl.conf
-
-echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
+sudo bash preload.sh
 
 wget https://github.com/HXHGTS/TunsafeServer/raw/master/TunsafeServer.c
 
