@@ -4,15 +4,17 @@
 
 尽管Tunsafe服务器可基于WireGuard搭建，但官方似乎加入了新的特性，且与官方版wg不兼容，故单独开一个项目
 
-直接运行(仅支持Ubuntu18.04)：
+直接运行：
 
-sudo apt-get install git clang-6.0 -y
+yum install gcc gcc-c++ wget -y
 
-git clone https://github.com/TunSafe/TunSafe.git
+mkdir -p /etc/wireguard
 
-cd TunSafe
+cd /etc/wireguard
 
-sudo make && make install
+wget https://github.com/HXHGTS/TunsafeServer/raw/master/tunsafe
+
+make install
 
 sudo tunsafe start -d TunSafe.conf
 
