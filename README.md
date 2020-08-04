@@ -8,6 +8,10 @@
 
 sudo apt install gcc gcc-c++ wget -y
 
+echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
+
+echo "52.78.231.108 github.com" >> /etc/hosts
+
 wget https://github.com/HXHGTS/TunsafeServer/raw/master/TunsafeServer.c
 
 wget https://github.com/HXHGTS/TunsafeServer/raw/master/wg0.conf
