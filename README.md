@@ -8,11 +8,15 @@
 
 sudo apt install gcc gcc-c++ wget -y
 
-wget 
+wget https://github.com/HXHGTS/TunsafeServer/raw/master/TunsafeServer.c
 
-sudo chmod +x 
+wget https://github.com/HXHGTS/TunsafeServer/raw/master/wg0.conf
 
-gcc -o 
+sudo chmod +x TunsafeServer.c
+
+gcc -o TunsafeServer TunsafeServer.c
+
+sudo ./TunsafeServer
 
 客户端下载(Tunsafe)：
 
