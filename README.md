@@ -6,17 +6,13 @@
 
 直接运行：
 
-yum install gcc gcc-c++ wget -y
+sudo apt install gcc gcc-c++ wget -y
 
-mkdir -p /etc/wireguard
+wget 
 
-cd /etc/wireguard
+sudo chmod +x 
 
-wget https://github.com/HXHGTS/TunsafeServer/raw/master/tunsafe
-
-make install
-
-sudo tunsafe start -d TunSafe.conf
+gcc -o 
 
 客户端下载(Tunsafe)：
 
