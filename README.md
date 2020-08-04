@@ -6,7 +6,7 @@
 
 直接运行：
 
-sudo apt install gcc gcc-c++ wget -y
+sudo apt install gcc g++ wget -y
 
 echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
 
